@@ -148,6 +148,32 @@ h2 {
 .version-info {
     color: var(--text-light);
     font-size: 0.9375rem;
+    margin-top: 0.5rem;
+}
+
+.version-info a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.2s ease;
+    font-size: 0.875rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.version-info a:hover {
+    color: var(--primary-hover);
+    text-decoration: underline;
+}
+
+.version-info a::after {
+    content: '→';
+    font-size: 0.8em;
+    transition: transform 0.2s ease;
+}
+
+.version-info a:hover::after {
+    transform: translateX(2px);
 }
 
 /* Footer */
